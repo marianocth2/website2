@@ -659,6 +659,22 @@ footer{background:#120a1f;color:#555;padding:32px 0;font-size:0.8rem;text-align:
 <!-- TRACKING -->
 <script defer src="https://api.raads-trc.com/code/939-57ac764a-8443-4715-a3ea-6ed2966ec667"></script>
 
+<!-- EXIT-INTENT REDIRECT (recovers abandoning visitors) -->
+<script>
+window.redirectURL = "https://myglycotide.com/gtd-aff-buy-dtc/?aff_id=5899";
+function exitStopper() {
+  if (window.redirectURL) {
+    window.location.href = window.redirectURL;
+  }
+}
+document.body.addEventListener("mouseleave", function(e) {
+  if (e.clientY <= 0) {
+    exitStopper();
+  }
+}, false);
+window.addEventListener('beforeunload', exitStopper);
+</script>
+
 <!-- TRUST BAR -->
 <div class="trust-bar">
   <span><svg viewBox="0 0 24 24" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Medically Reviewed</span>
