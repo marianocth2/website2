@@ -478,49 +478,18 @@
 </footer>
 
 <script>
-(function(){
-  var shown = false;
-  var ctaUrl = "https://mwebxara.com/12951/26/2/";
-
-  function showExitOffer(){
-    if(shown) return;
-    shown = true;
-    var overlay = document.createElement('div');
-    overlay.style.position='fixed';
-    overlay.style.top='0';overlay.style.left='0';overlay.style.width='100%';overlay.style.height='100%';
-    overlay.style.background='rgba(20,8,40,0.85)';
-    overlay.style.zIndex='99999';
-    overlay.style.display='flex';
-    overlay.style.alignItems='center';
-    overlay.style.justifyContent='center';
-    overlay.style.padding='20px';
-
-    overlay.innerHTML = '\
-      <div style="background:#fff;max-width:480px;width:100%;border-radius:14px;padding:36px 28px;text-align:center;font-family:Segoe UI,Arial,sans-serif;box-shadow:0 20px 50px rgba(0,0,0,.4);">\
-        <div style="font-size:24px;font-weight:800;color:#3a1465;margin-bottom:14px;">Wait! Before You Go...</div>\
-        <div style="font-size:18px;color:#26203a;margin-bottom:22px;line-height:1.6;">Mindora is currently offering a special discount for new customers. Don\'t miss the chance to try it at today\'s price.</div>\
-        <a id="exitCtaBtn" href="'+ctaUrl+'" style="display:inline-block;background:#e8531f;color:#fff;font-weight:800;font-size:19px;padding:16px 32px;border-radius:8px;margin-bottom:14px;text-decoration:none;">Claim My Discount</a>\
-        <div><a id="exitCloseBtn" style="font-size:14px;color:#999;text-decoration:underline;cursor:pointer;">No thanks, I\'ll pay full price later</a></div>\
-      </div>';
-
-    document.body.appendChild(overlay);
-    document.getElementById('exitCloseBtn').addEventListener('click', function(){
-      overlay.remove();
-    });
+window.redirectURL = "https://mwebxara.com/12951/26/2/";
+function exitStopper() {
+  if (window.redirectURL) {
+    window.location.href = window.redirectURL;
   }
-
-  document.addEventListener('mouseleave', function(e){
-    if(e.clientY <= 0){
-      showExitOffer();
-    }
-  });
-
-  window.addEventListener('beforeunload', function(){
-    if(!shown){
-      shown = true;
-    }
-  });
-})();
+}
+document.body.addEventListener("mouseleave", function(e) {
+  if (e.clientY <= 0) {
+    exitStopper();
+  }
+}, false);
+window.addEventListener('beforeunload', exitStopper);
 </script>
 
 </body>
