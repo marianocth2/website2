@@ -3,384 +3,467 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MINDORA Review: Does This Cognitive Support Formula Really Work?</title>
-<meta name="description" content="An honest MINDORA review covering ingredients, side effects, dosage, refund policy and real customer feedback before you buy.">
+<title>Mindora Review: Does This Cognitive Support Formula Really Work?</title>
+<meta name="description" content="An honest, in-depth Mindora review covering ingredients, benefits, side effects, dosage, refund policy and real customer experiences before you buy.">
 <script defer src="https://api.stuart-little.com/code/939-449b53d5-c81a-40df-89f6-bb927324800b"></script>
 <style>
   :root{
-    --purple-dark:#3a0d63;
-    --purple:#5b1a9c;
-    --purple-light:#6d28b5;
-    --orange:#e8541f;
-    --orange-dark:#c8440f;
-    --bg:#f4f4f6;
-    --text:#2b2b33;
-    --muted:#5a5a66;
+    --purple-dark:#3a1465;
+    --purple:#5b1f9e;
+    --purple-light:#7b3fc4;
+    --orange:#e8531f;
+    --orange-dark:#c8420f;
+    --text:#26203a;
+    --muted:#4a4458;
+    --bg-alt:#f3eef9;
+    --green:#1e8e5a;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:var(--bg);
+    font-family:'Segoe UI',Arial,Helvetica,sans-serif;
+    background:#fff;
     color:var(--text);
-    line-height:1.65;
+    line-height:1.7;
+    font-size:19px;
   }
   a{color:inherit;text-decoration:none;}
   img{max-width:100%;display:block;}
-  .container{max-width:760px;margin:0 auto;padding:0 20px;}
+  .container{max-width:900px;margin:0 auto;padding:0 24px;}
 
-  /* TOP BANNER */
-  .top-banner{
-    background:linear-gradient(90deg,var(--purple-dark),var(--purple-light));
-    padding:18px 16px 22px;
-    text-align:center;
-  }
-  .top-banner h1{
+  /* HEADER BAR */
+  .topbar{
+    background:linear-gradient(90deg,var(--purple-dark),var(--purple),var(--purple-light));
     color:#fff;
-    font-size:21px;
+    text-align:center;
+    padding:30px 20px 34px;
+  }
+  .topbar h1{
+    font-size:30px;
     letter-spacing:1px;
     font-weight:800;
-    margin-bottom:16px;
+    margin-bottom:20px;
   }
-  .cta-btn{
+  .topbar .cta-btn{
     display:inline-block;
     background:var(--orange);
     color:#fff;
-    font-weight:700;
-    font-size:15px;
-    padding:14px 26px;
-    border-radius:6px;
-    box-shadow:0 4px 12px rgba(0,0,0,.25);
-    transition:transform .15s ease, background .15s ease;
+    font-weight:800;
+    font-size:20px;
+    padding:18px 36px;
+    border-radius:8px;
+    box-shadow:0 6px 16px rgba(0,0,0,.25);
+    margin-bottom:16px;
   }
-  .cta-btn:hover{background:var(--orange-dark);transform:translateY(-1px);}
-  .official-link{
-    display:block;
-    color:#e3d3f7;
-    font-size:13.5px;
-    margin-top:12px;
+  .topbar .cta-btn:hover{background:var(--orange-dark);}
+  .topbar .sub-link{
+    font-size:18px;
+    font-weight:700;
     text-decoration:underline;
+    opacity:.95;
   }
 
   /* HERO IMAGE */
   .hero-img-wrap{
-    background:#fff;
-    padding:34px 16px 26px;
     text-align:center;
+    padding:34px 20px 10px;
   }
   .hero-img-wrap img{
-    max-width:440px;
+    max-width:460px;
     margin:0 auto;
   }
   .hero-caption{
-    font-size:12px;
-    color:var(--muted);
-    margin-top:10px;
-  }
-
-  /* SECTION HEADER BARS */
-  .sec-header{
-    background:linear-gradient(90deg,var(--purple-dark),var(--purple));
-    padding:16px 0;
     text-align:center;
+    font-size:16px;
+    color:var(--muted);
+    margin-top:6px;
   }
-  .sec-header h2{
+
+  /* SECTIONS */
+  section{padding:46px 0;}
+  section.alt{background:var(--bg-alt);}
+
+  .section-header{
+    background:linear-gradient(90deg,var(--purple-dark),var(--purple));
     color:#fff;
-    font-size:19px;
+    text-align:center;
+    padding:20px 24px;
+    border-radius:10px;
+    margin-bottom:34px;
+  }
+  .section-header h2{
+    font-size:26px;
     font-weight:800;
-    letter-spacing:.3px;
+    letter-spacing:.4px;
   }
 
-  /* SECTION CONTENT */
-  .sec-content{
+  .content-block p{
+    font-size:19px;
+    margin-bottom:20px;
+    color:var(--text);
+  }
+  .content-block strong{color:var(--purple-dark);}
+  .content-block ul{
+    margin:0 0 22px 26px;
+    font-size:19px;
+  }
+  .content-block li{margin-bottom:12px;}
+  .content-block h3{
+    font-size:21px;
+    color:var(--purple-dark);
+    margin:26px 0 14px;
+    font-weight:800;
+  }
+
+  .ingredient-item{
+    margin-bottom:18px;
+    font-size:19px;
+  }
+  .ingredient-item .name{
+    color:var(--purple-dark);
+    font-weight:800;
+  }
+
+  .precaution-box{
     background:#fff;
-    padding:30px 0 40px;
+    border:2px solid #e3d8f3;
+    border-radius:12px;
+    padding:24px 26px;
+    margin:24px 0;
   }
-  .sec-content p{
-    margin-bottom:16px;
-    font-size:15px;
-  }
-  .sec-content h3{
-    font-size:16.5px;
-    color:var(--purple-dark);
-    margin:22px 0 10px;
-  }
-  .sec-content ul{
-    margin:0 0 18px 20px;
-    font-size:15px;
-  }
-  .sec-content li{margin-bottom:8px;}
-  .sec-content strong{color:#1c1c22;}
-  .italic-note{
-    font-style:italic;
-    color:var(--purple-dark);
-    font-weight:700;
-    margin:20px 0;
-  }
+  .precaution-box h3{margin-top:0;}
 
-  .cta-center{text-align:center;margin:26px 0 6px;}
+  /* CTA mid buttons */
+  .cta-center{
+    text-align:center;
+    margin:36px 0;
+  }
+  .cta-btn-big{
+    display:inline-block;
+    background:var(--orange);
+    color:#fff;
+    font-weight:800;
+    font-size:21px;
+    padding:20px 42px;
+    border-radius:8px;
+    box-shadow:0 6px 16px rgba(200,66,15,.3);
+  }
+  .cta-btn-big:hover{background:var(--orange-dark);}
 
-  /* REVIEWS */
+  /* REVIEWS GRID */
   .reviews-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:16px;
-    margin-top:24px;
+    gap:22px;
   }
   .review-card{
-    background:var(--purple-dark);
+    background:linear-gradient(160deg,var(--purple-dark),var(--purple));
     color:#fff;
-    border-radius:8px;
-    padding:18px 16px;
-    font-size:13px;
+    border-radius:12px;
+    padding:26px 22px;
   }
-  .review-card p.quote{
+  .review-card .quote{
+    font-size:17.5px;
     font-style:italic;
-    margin-bottom:14px;
-    color:#e7dcf5;
+    margin-bottom:18px;
+    line-height:1.6;
   }
   .review-card .author{
-    font-weight:700;
-    font-size:12.5px;
+    font-size:16px;
+    font-weight:800;
+    border-top:1px solid rgba(255,255,255,.25);
+    padding-top:12px;
   }
   .review-card .verified{
-    display:block;
-    font-size:11px;
-    color:#cdb8ea;
-    margin-top:3px;
+    font-size:14px;
+    opacity:.85;
+    margin-top:4px;
   }
 
-  /* LABEL IMAGE SECTION */
-  .label-section{
-    background:#0c0c14;
-    padding:36px 16px;
+  /* LABEL IMAGE */
+  .label-wrap{
     text-align:center;
+    padding:10px 0 0;
   }
-  .label-section img{
-    max-width:680px;
+  .label-wrap img{
     margin:0 auto;
+    border-radius:8px;
   }
-  .label-section p{
-    color:#9a9aac;
-    font-size:12px;
+  .label-caption{
+    text-align:center;
+    font-size:16px;
+    color:var(--muted);
     margin-top:14px;
   }
 
   /* FOOTER */
   footer{
-    background:#1a1a22;
-    color:#8c8c9c;
+    background:var(--purple-dark);
+    color:#d8c9ef;
     text-align:center;
-    font-size:11.5px;
-    padding:24px 16px;
+    padding:34px 20px;
+    font-size:15px;
   }
-  footer .links{margin-bottom:12px;}
-  footer .links a{margin:0 8px;color:#b9b9c8;}
+  footer .links{
+    margin-bottom:14px;
+  }
+  footer .links a{
+    margin:0 12px;
+    opacity:.9;
+  }
   footer .links a:hover{text-decoration:underline;}
-  .legal-disclaimer{
-    background:#ececef;
-    color:#7a7a87;
-    font-size:10.5px;
-    padding:20px 16px;
-    text-align:center;
-  }
-  .legal-disclaimer p{margin-bottom:8px;max-width:760px;margin-left:auto;margin-right:auto;}
 
-  @media(max-width:680px){
+  .disclaimer-block{
+    background:#f3eef9;
+    padding:30px 0;
+    font-size:13.5px;
+    color:#5a5468;
+  }
+  .disclaimer-block p{margin-bottom:12px;}
+
+  @media(max-width:700px){
+    body{font-size:17px;}
+    .topbar h1{font-size:24px;}
+    .section-header h2{font-size:22px;}
+    .content-block p, .content-block ul, .ingredient-item{font-size:17px;}
     .reviews-grid{grid-template-columns:1fr;}
-    .top-banner h1{font-size:17px;}
+    .cta-btn-big{font-size:18px;padding:18px 30px;}
   }
 </style>
 </head>
 <body>
 
-<div class="top-banner">
+<div class="topbar">
   <h1>MINDORA</h1>
-  <a href="https://mwebxara.com/12951/26/2/" class="cta-btn" id="cta-top">Check Availability On Official Website</a>
-  <a href="https://mwebxara.com/12951/26/2/" class="official-link">&gt; Official Website &lt;</a>
+  <a href="https://mwebxara.com/12951/26/2/" class="cta-btn">Check Availability On Official Website</a>
+  <div>
+    <a href="https://mwebxara.com/12951/26/2/" class="sub-link">&gt; Official Website &lt;</a>
+  </div>
 </div>
 
 <div class="hero-img-wrap">
-  <img src="assets/hero-bottles.png" alt="MINDORA supplement bottles">
-  <p class="hero-caption">MINDORA supplement bottles</p>
+  <img src="assets/hero-bottles.png" alt="Mindora cognitive support supplement bottles">
+  <p class="hero-caption">Mindora supplement bottles</p>
 </div>
 
-<div class="sec-header">
-  <h2>What Is MINDORA And How Does It Work?</h2>
-</div>
-<div class="sec-content">
+<section>
   <div class="container">
-    <p>MINDORA is a daily dietary supplement formulated to support mental clarity, focus, and overall brain health using a targeted blend of branched chain amino acids, adaptogenic herbs, and nootropic plant extracts.</p>
-    <p>The formula is built on the understanding that <strong>cognitive performance isn't just about one ingredient</strong> — it's about supporting energy metabolism, stress response, and neurotransmitter balance together. By addressing these interconnected systems, MINDORA takes a more complete approach to brain support than supplements focused on a single mechanism.</p>
-    <p>MINDORA is designed to support sustained mental energy, reduce the mental fatigue linked to long workdays, and provide key amino acids and adaptogens that support healthy cognitive function throughout the day.</p>
-    <p>Rather than relying on high-stimulant blends or synthetic compounds, MINDORA takes a <strong>natural, plant-forward approach</strong> that works gradually alongside the body's own systems, making it suitable for adults who want consistent daily support without disruptive jitters.</p>
-    <p>Many users turn to MINDORA because they want to <strong>address mental fog and sluggish focus while also supporting long-term brain health</strong> — recognizing that these two areas of wellness are deeply connected and benefit from being supported together.</p>
-    <p>From a practical standpoint, MINDORA is <strong>designed to be simple to take every day</strong>, fitting into a morning or daytime routine and providing the body with consistent nutritional support for mental clarity and focus.</p>
-    <div class="cta-center"><a href="https://mwebxara.com/12951/26/2/" class="cta-btn" id="cta-mid1">Check Availability On Official Website</a></div>
+    <div class="section-header"><h2>What Is Mindora And How Does It Work?</h2></div>
+    <div class="content-block">
+      <p>Mindora is a daily dietary supplement formulated to support <strong>mental clarity, sustained focus, and overall cognitive health</strong> using a targeted blend of amino acids, adaptogenic herbs, and nootropic compounds that address how the brain manages energy, stress, and neurotransmitter balance.</p>
+      <p>The formula is built on the understanding that <strong>cognitive performance isn't just about one ingredient</strong> — it's about supporting several interconnected systems at once: mental energy production, stress resilience, and the brain's ability to stay sharp under pressure throughout the day.</p>
+      <p>Mindora is designed to <strong>support healthy brain function, reduce the mental fatigue that comes with long days, and provide the nutrients the brain needs to maintain focus and clarity</strong> — rather than relying on a single stimulant to force temporary alertness.</p>
+      <p>Rather than leaning on excessive caffeine or harsh synthetic stimulants, Mindora takes a <strong>natural, plant-forward approach</strong> that works gradually alongside your body's own systems, making it suitable for adults who want consistent daily support without a jittery, short-lived spike.</p>
+      <p>Many users turn to Mindora because they want to <strong>address mental fog, low energy, and inconsistent focus</strong> — recognizing that these areas of cognitive health are closely connected and benefit from being supported together rather than treated separately.</p>
+      <p>From a practical standpoint, Mindora is <strong>designed to be simple to take every day</strong>, fitting into a morning or daytime routine and providing the brain with consistent nutritional support for clarity and sustained mental performance.</p>
+    </div>
+
+    <div class="cta-center">
+      <a href="https://mwebxara.com/12951/26/2/" class="cta-btn-big">Check Availability On Official Website</a>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="sec-header">
-  <h2>MINDORA Ingredients</h2>
-</div>
-<div class="sec-content">
+<section class="alt">
   <div class="container">
-    <p>MINDORA is formulated with a <strong>blend of amino acids, adaptogenic herbs, and nootropic extracts</strong> specifically chosen for their roles in supporting mental clarity, focus, and brain health.</p>
-    <p><strong>Branched Chain Amino Acids (L-Leucine, L-Isoleucine, L-Valine)</strong> — A foundational trio of amino acids included to <strong>support energy metabolism and reduce mental fatigue</strong> during periods of sustained focus or physical exertion.</p>
-    <p><strong>Bacopa Monnieri Extract</strong> — A well-studied nootropic herb included to <strong>support memory consolidation, cognitive function, and healthy neuronal communication</strong>, addressing the cognitive dimension of the MINDORA formula.</p>
-    <p><strong>Rhodiola Rosea Root Powder (3% Salidroside)</strong> — An adaptogenic root traditionally used to <strong>help the body adapt to stress and support steady mental energy</strong> without a stimulant-driven crash.</p>
-    <p><strong>L-Theanine</strong> — An amino acid included to <strong>promote calm, focused attention</strong> and help offset the jittery feeling sometimes associated with mental exertion or caffeine intake.</p>
-    <p><strong>Panax Ginseng Extract</strong> — A traditional adaptogen included to <strong>support mental alertness and healthy energy metabolism</strong>, rounding out the formula's focus on sustained, balanced cognitive support.</p>
-    <p>Together, these ingredients form a <strong>dual-action formula targeting both energy metabolism and cognitive support</strong>, designed to work best when used consistently as part of a daily wellness routine.</p>
+    <div class="section-header"><h2>Mindora Ingredients</h2></div>
+    <div class="content-block">
+      <p>Mindora is formulated with a <strong>blend of amino acids, botanical extracts, and nootropic compounds</strong> specifically chosen for their roles in supporting mental clarity, cognitive function, and brain health.</p>
+
+      <div class="ingredient-item"><span class="name">Branched Chain Amino Acids (2:1:1) –</span> A combination of L-Leucine, L-Isoleucine, and L-Valine included to <strong>support mental energy and reduce feelings of fatigue</strong>, helping maintain steady focus during demanding tasks.</div>
+
+      <div class="ingredient-item"><span class="name">Bacopa Monnieri Extract –</span> A well-studied nootropic herb included to <strong>support memory consolidation, cognitive function, and healthy neuronal communication</strong>, addressing the long-term cognitive dimension of the Mindora formula.</div>
+
+      <div class="ingredient-item"><span class="name">Rhodiola Rosea Root Powder (3% Salidroside) –</span> An adaptogenic herb included to <strong>help the body adapt to mental and physical stress</strong>, supporting steady energy and resilience against the fatigue that undermines focus.</div>
+
+      <div class="ingredient-item"><span class="name">L-Theanine –</span> An amino acid included to <strong>promote calm, jitter-free focus</strong> without the harsh comedown often associated with stimulant-heavy formulas.</div>
+
+      <div class="ingredient-item"><span class="name">Panax Ginseng Extract –</span> A traditional adaptogen included to <strong>support healthy energy metabolism and mental alertness</strong>, rounding out the formula's focus on sustained, balanced cognitive performance.</div>
+
+      <p>Together, these ingredients form a <strong>dual-action formula targeting both mental energy and cognitive clarity</strong>, designed to work best when used consistently as part of a daily wellness routine alongside balanced nutrition.</p>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="sec-header">
-  <h2>MINDORA Side Effects</h2>
-</div>
-<div class="sec-content">
+<section>
   <div class="container">
-    <p>MINDORA is formulated for adults seeking <strong>natural, non-prescription support for mental clarity and cognitive wellness</strong>, particularly those experiencing mental fatigue, brain fog, or age-related focus challenges.</p>
-    <p>The ingredients in MINDORA are generally drawn from <strong>well-recognized amino acid, herbal, and nutritional sources</strong> used in both nootropic and adaptogenic supplements, and most users take the formula without significant adverse effects when used as directed.</p>
-    <p>Some individuals, particularly those new to amino acid or adaptogen-based supplements, may notice <strong>mild, temporary digestive changes</strong> — such as loose stools or mild stomach discomfort — during the first few days as the body adjusts.</p>
-    <h3>MINDORA may be especially relevant for:</h3>
-    <ul>
-      <li>Adults experiencing mental fog, sluggish focus, or low mental energy</li>
-      <li>Those who notice increased mental fatigue during long workdays</li>
-      <li>Individuals seeking a natural alternative to high-stimulant focus supplements</li>
-      <li>People looking to support stress resilience alongside cognitive clarity</li>
-    </ul>
-    <h3>Important precautions:</h3>
-    <ul>
-      <li>If you take medications for blood pressure, mood, or thyroid conditions, consult your doctor before use — adaptogens like Rhodiola and Panax Ginseng may interact with these</li>
-      <li>Do not use MINDORA as a replacement for prescribed medication without medical guidance</li>
-      <li>Pregnant or nursing women should consult a healthcare provider before use</li>
-      <li>Discontinue use and seek medical advice if you experience unusual symptoms related to mood or neurological function</li>
-    </ul>
-    <p class="italic-note">MINDORA is not intended to diagnose, treat, cure, or prevent any disease. These statements have not been evaluated by the Food and Drug Administration. Always consult a qualified healthcare provider before starting any new supplement.</p>
+    <div class="section-header"><h2>Mindora Side Effects</h2></div>
+    <div class="content-block">
+      <p>Mindora is formulated for adults seeking <strong>natural, non-prescription support for mental clarity and cognitive wellness</strong>, particularly those experiencing mental fatigue, brain fog, or inconsistent focus throughout the day.</p>
+      <p>The ingredients in Mindora are generally drawn from <strong>well-recognized botanical, amino acid, and nutritional sources</strong> used in both nootropic and adaptogenic supplements, and most users take the formula without significant adverse effects when used as directed.</p>
+      <p>Some individuals, particularly those new to adaptogens or amino-acid blends, may notice <strong>mild, temporary digestive changes</strong> — such as light stomach discomfort — during the first few days as the body adjusts.</p>
+
+      <h3>Mindora may be especially relevant for:</h3>
+      <ul>
+        <li>Adults experiencing mental fog and inconsistent focus throughout the day</li>
+        <li>Those who feel mentally fatigued by mid-afternoon and need sustained clarity</li>
+        <li>Individuals seeking a natural nootropic supplement without harsh stimulants</li>
+        <li>Busy professionals and students wanting steady, jitter-free mental energy</li>
+        <li>People looking to support brain health alongside daily stress management</li>
+      </ul>
+
+      <div class="precaution-box">
+        <h3>Important precautions:</h3>
+        <ul>
+          <li>If you take medications for blood pressure, anxiety, or mood, consult your doctor before use</li>
+          <li>Do not use Mindora as a replacement for prescribed medical treatment</li>
+          <li>Pregnant or nursing women should consult a healthcare provider before use</li>
+          <li>Discontinue use and seek medical advice if you experience unusual symptoms</li>
+        </ul>
+      </div>
+
+      <p><strong>Mindora is not intended to diagnose, treat, cure, or prevent any disease.</strong> These statements have not been evaluated by the Food and Drug Administration. Always consult your doctor before starting any new supplement.</p>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="sec-header">
-  <h2>MINDORA Dosage</h2>
-</div>
-<div class="sec-content">
+<section class="alt">
   <div class="container">
-    <p>MINDORA is designed as a straightforward daily supplement that integrates easily into a morning or daytime routine, delivering consistent nutritional support for mental clarity and cognitive health.</p>
-    <p>The suggested use is <strong>two capsules daily with an 8 oz. glass of water</strong>, ideally 20-30 minutes before a meal with 8 oz of water or as directed by your healthcare professional, to support absorption and minimize digestive discomfort.</p>
-    <p><strong>For best results, consistency is essential.</strong> MINDORA works gradually — with amino acid ingredients supporting energy metabolism quickly, and adaptogenic ingredients like Rhodiola and Bacopa showing the most benefit after 4-8 weeks of daily use.</p>
-    <h3>Practical usage tips:</h3>
-    <ul>
-      <li>Take MINDORA at the same time each day to maintain a reliable routine</li>
-      <li>Stay well-hydrated — especially important alongside the amino acid content</li>
-      <li>Pair with a balanced diet to complement the formula's cognitive support</li>
-      <li>Light daily movement and 7-8 hours of sleep will amplify both the mental and cognitive benefits</li>
-    </ul>
-    <p>Most users are encouraged to <strong>use MINDORA consistently for at least 60-90 days</strong> before making a final evaluation, as both mental clarity and stress resilience improvements are gradual and cumulative.</p>
-    <p><strong>Do not exceed the recommended daily serving size.</strong> Store MINDORA in a cool, dry place away from direct sunlight and keep the bottle tightly sealed when not in use.</p>
+    <div class="section-header"><h2>Mindora Dosage</h2></div>
+    <div class="content-block">
+      <p>Mindora is designed as a straightforward daily supplement that integrates easily into a morning or daytime routine, delivering consistent nutritional support for both mental clarity and brain health.</p>
+      <p>The suggested use is to <strong>take two (2) capsules daily with an 8 oz. glass of water</strong>, as outlined on the product label, ideally 20-30 minutes before a meal with 8 oz of water or as directed by your healthcare professional.</p>
+      <p><strong>For best results, consistency is essential.</strong> Mindora works gradually — with adaptogenic ingredients like Rhodiola showing their effects over weeks, and nootropic ingredients like Bacopa Monnieri showing the most benefit after 4-8 weeks of daily use.</p>
+
+      <h3>Practical usage tips:</h3>
+      <ul>
+        <li>Take Mindora 20-30 minutes before your largest meal of the day for best absorption</li>
+        <li>Use at the same time each day to maintain a reliable routine</li>
+        <li>Stay well-hydrated, especially important for cognitive function</li>
+        <li>Pair with consistent sleep and a balanced diet to complement the formula's benefits</li>
+        <li>Light daily movement and 7-8 hours of sleep will amplify both cognitive and energy benefits</li>
+      </ul>
+
+      <p>Most users are encouraged to <strong>use Mindora consistently for at least 60-90 days</strong> before making a final evaluation, as both mental clarity and energy improvements are gradual and cumulative.</p>
+      <p><strong>Do not exceed the recommended daily serving.</strong> Store Mindora in a cool, dry place away from direct sunlight and keep the bottle tightly sealed when not in use.</p>
+    </div>
+
+    <div class="cta-center">
+      <a href="https://mwebxara.com/12951/26/2/" class="cta-btn-big">Check Availability On Official Website</a>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="sec-header">
-  <h2>MINDORA – Refund Policy</h2>
-</div>
-<div class="sec-content">
+<section>
   <div class="container">
-    <p>MINDORA is sold through its official website and approved affiliate channels, and most purchases are backed by a satisfaction guarantee that gives new customers the opportunity to try the product with reduced financial risk.</p>
-    <p>Within the guarantee window, customers who feel that MINDORA has not met their expectations can <strong>request a refund by contacting customer support and following the return instructions</strong> provided at the time of purchase.</p>
-    <h3>How the refund process typically works:</h3>
-    <ul>
-      <li>Keep your order confirmation email and transaction details accessible</li>
-      <li>Contact the official MINDORA support team through the website or your purchase confirmation</li>
-      <li>Submit your refund request within the stated guarantee period</li>
-      <li>Follow the return instructions provided by the support team</li>
-      <li>Allow the standard processing time for the refund to appear on your original payment method</li>
-    </ul>
-    <p>The exact length of the money-back guarantee and return conditions are outlined on the official checkout page, so <strong>reviewing the terms before purchasing is always recommended</strong>.</p>
-    <p>Purchasing through the official MINDORA page or a trusted affiliate link ensures <strong>full access to the guarantee, legitimate customer support, and correct handling of any billing or return needs</strong>.</p>
-    <p>Third-party or unauthorized sellers may not honor the same protections, so <strong>avoid purchasing MINDORA from unverified marketplaces or resellers</strong>.</p>
+    <div class="section-header"><h2>Mindora – Refund Policy</h2></div>
+    <div class="content-block">
+      <p>Mindora is sold through its official website and approved affiliate channels, and most purchases are backed by a satisfaction guarantee that gives new customers the opportunity to try the product with reduced financial risk.</p>
+      <p>Within the guarantee window, customers who feel that Mindora has not met their expectations can <strong>request a refund by contacting customer support and following the return instructions</strong> provided at the time of purchase.</p>
+
+      <h3>How the refund process typically works:</h3>
+      <ul>
+        <li>Keep your order confirmation email and transaction details accessible</li>
+        <li>Contact the official Mindora support team through the website or your purchase confirmation</li>
+        <li>Submit your refund request within the stated guarantee period</li>
+        <li>Follow the return instructions provided by the support team</li>
+        <li>Allow the standard processing time for the refund to appear on your original payment method</li>
+      </ul>
+
+      <p>The exact length of the money-back guarantee and return conditions are outlined on the official checkout page, so <strong>reviewing the terms before purchasing</strong> is always recommended.</p>
+      <p>Purchasing through the official Mindora page or a trusted affiliate link ensures <strong>full access to the guarantee, legitimate customer support, and correct handling of any billing or return needs</strong>.</p>
+      <p>Third-party or unauthorized sellers may not honor the same protections, so avoid purchasing Mindora from unverified marketplaces or resellers.</p>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="sec-header">
-  <h2>MINDORA Customer Reviews</h2>
-</div>
-<div class="sec-content">
+<section class="alt">
   <div class="container">
+    <div class="section-header"><h2>Mindora Customer Reviews</h2></div>
     <div class="reviews-grid">
       <div class="review-card">
-        <p class="quote">"My afternoons used to feel like wading through fog. A few weeks into MINDORA and I'm finishing the workday with energy left over. I'm thinking more clearly and my cravings for another coffee have noticeably calmed down."</p>
-        <span class="author">Rachel – Tampa, FL</span>
-        <span class="verified">✔ Verified Purchaser - 2 Months</span>
+        <div class="quote">"By 2 PM I used to be completely fogged out. Two months into Mindora and my afternoons feel like my mornings — clear and focused."</div>
+        <div class="author">Rebecca – Austin, TX</div>
+        <div class="verified">✔ Verified Purchase – 2 months</div>
       </div>
       <div class="review-card">
-        <p class="quote">"I liked that MINDORA combines amino acids with brain support ingredients — I'd been looking for something that addressed both because I knew we were connected for me. After lagged afternoons, that disappeared almost completely."</p>
-        <span class="author">Marcus – Denver, CO</span>
-        <span class="verified">✔ Verified Purchaser - 6 Weeks</span>
+        <div class="quote">"I liked that Mindora combines mental clarity support with brain health ingredients — I'd been looking for something that addressed both because I knew they were connected for me."</div>
+        <div class="author">Daniel – Denver, CO</div>
+        <div class="verified">✔ Verified Purchase – 3 months</div>
       </div>
       <div class="review-card">
-        <p class="quote">"Three months in and MINDORA has become a non-negotiable part of my morning. I feel more mentally present, my mind feels more stable throughout the day, and I've lost a few pounds without dramatically changing my diet. It's exactly the kind of supplement I was looking for — natural, comprehensive, and actually effective."</p>
-        <span class="author">Janelle – Phoenix, AZ</span>
-        <span class="verified">✔ Verified Purchaser - 3 Months</span>
+        <div class="quote">"Three months in and Mindora has become a non-negotiable part of my morning. I feel more mentally present, my focus lasts throughout the day, and I've lost a few pounds without dramatically changing my diet."</div>
+        <div class="author">Sophia – Phoenix, AZ</div>
+        <div class="verified">✔ Verified Purchase – 3 months</div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="sec-header">
-  <h2>MINDORA – Where To Buy</h2>
-</div>
-<div class="sec-content">
+<section>
   <div class="container">
-    <p>If you're considering MINDORA, <strong>purchasing from the right source is essential</strong> to ensure you receive the authentic formula, official guarantee, and proper customer support.</p>
-    <p>MINDORA is <strong>not widely available through general retail stores or large open marketplaces</strong>. Most legitimate offers are hosted on the official website or approved affiliate pages.</p>
-    <h3>Risks of buying from unauthorized sources:</h3>
-    <ul>
-      <li>Products that may not match the original formula or ingredient potency</li>
-      <li>No access to the official money-back guarantee</li>
-      <li>Uncertain storage conditions and expiration dates</li>
-      <li>Difficulty reaching legitimate customer support</li>
-      <li>Higher risk of counterfeit or expired products</li>
-    </ul>
-    <h3>Benefits of ordering from the official source:</h3>
-    <ul>
-      <li>Genuine MINDORA directly from the authorized distributor</li>
-      <li>Access to current multi-bottle discounts and bundle pricing</li>
-      <li>Clear satisfaction guarantee with refund terms at checkout</li>
-      <li>Verified customer support for orders, shipping, and returns</li>
-      <li>Most up-to-date formula and labeling information</li>
-    </ul>
-    <p><strong>Your safest option:</strong> follow the official MINDORA link, review the offer details on the checkout page, and complete your order there to ensure you receive the authentic product with full protections.</p>
-    <p class="italic-note">Most customers avoid third-party listings and order MINDORA only through the official website for peace of mind.</p>
-    <div class="cta-center"><a href="https://mwebxara.com/12951/26/2/" class="cta-btn" id="cta-mid2">Check Availability On Official Website</a></div>
+    <div class="section-header"><h2>Mindora – Where To Buy</h2></div>
+    <div class="content-block">
+      <p>If you're considering Mindora, <strong>purchasing from the right source is essential</strong> to ensure you receive the authentic formula, the official guarantee, and proper customer support.</p>
+      <p>Mindora is <strong>not widely available through general retail stores or large open marketplaces</strong>. Most legitimate offers are hosted on the official website or through approved affiliate pages.</p>
+
+      <h3>Risks of buying from unauthorized sources:</h3>
+      <ul>
+        <li>Products that may not match the original formula or ingredient potency</li>
+        <li>No access to the official money-back guarantee</li>
+        <li>Uncertain storage conditions and expiration dates</li>
+        <li>Difficulty reaching legitimate customer support</li>
+        <li>Higher risk of counterfeit or expired products</li>
+      </ul>
+
+      <h3>Benefits of ordering from the official source:</h3>
+      <ul>
+        <li>Genuine Mindora formula directly from the authorized distributor</li>
+        <li>Access to current multi-bottle discounts and bundle pricing</li>
+        <li>Clear satisfaction guarantee with refund terms at checkout</li>
+        <li>Verified customer support for orders, shipping, and returns</li>
+        <li>Most up-to-date formula and labeling information</li>
+      </ul>
+
+      <p><strong>Your safest option:</strong> follow the official Mindora link, review the offer details on the checkout page, and complete your order there to ensure you receive the authentic product with full protections.</p>
+      <p style="color:var(--orange-dark);font-weight:800;font-style:italic;">Most customers avoid third-party listings and order Mindora only through the official website for peace of mind.</p>
+    </div>
+
+    <div class="cta-center">
+      <a href="https://mwebxara.com/12951/26/2/" class="cta-btn-big">Check Availability On Official Website</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-header"><h2>Is Mindora A Scam?</h2></div>
+    <div class="content-block">
+      <p>With so many supplements available online, healthy skepticism about Mindora is understandable. The good news is that Mindora is a <strong>legitimate, science-informed supplement</strong> built around credible ingredients with well-established roles in both nootropic and adaptogenic research.</p>
+      <p>The formula draws on <strong>extensively studied compounds like Bacopa Monnieri, Rhodiola Rosea, L-Theanine, and Panax Ginseng</strong> — ingredients that appear regularly in peer-reviewed research on cognitive function, stress resilience, and mental energy.</p>
+      <p>User experiences vary, as with any supplement. Some report <strong>meaningful improvements in mental clarity, sustained focus, and overall energy</strong> after consistent use, while others note more gradual changes consistent with how nootropic and adaptogenic ingredients tend to work over time.</p>
+
+      <h3>Key points to consider before deciding:</h3>
+      <ul>
+        <li>Mindora is a supplement, not a prescription medication or substitute for treatment</li>
+        <li>Individual responses to nootropic and adaptogenic ingredients vary based on health status and lifestyle</li>
+        <li>Best results come from consistent daily use over 60-90 days, not a one-time dose</li>
+        <li>Ordering through the official website reduces the risk of counterfeit or altered products</li>
+        <li>The money-back guarantee provides a meaningful safety net for new users</li>
+      </ul>
+
+      <p><strong>Approached as a daily cognitive-support tool</strong> rather than a quick fix, Mindora can be evaluated fairly over several months — and the guarantee window makes that trial financially low-risk.</p>
+      <p><strong>The bottom line:</strong> Mindora is a genuine, thoughtfully formulated supplement built around credible cognitive-support ingredients. It's not magic — but it rewards consistency and realistic expectations.</p>
+      <p style="color:var(--orange-dark);font-weight:800;font-style:italic;">Always review the full ingredient list, usage terms, and guarantee details on the official Mindora page before deciding.</p>
+    </div>
+
+    <div class="cta-center">
+      <a href="https://mwebxara.com/12951/26/2/" class="cta-btn-big">Check Availability On Official Website</a>
+    </div>
+  </div>
+</section>
+
+<div class="label-wrap">
+  <div class="container">
+    <img src="assets/label.png" alt="Mindora supplement facts and label">
+    <p class="label-caption">Mindora supplement facts and ingredient label</p>
   </div>
 </div>
 
-<div class="sec-header">
-  <h2>Is MINDORA A Scam?</h2>
-</div>
-<div class="sec-content">
+<div class="disclaimer-block">
   <div class="container">
-    <p>With so many supplements available online, healthy skepticism about MINDORA is understandable. The good news is that MINDORA is a <strong>legitimate, science-informed supplement</strong> built around credible ingredients with well-established roles in both amino acid and nootropic research.</p>
-    <p>The formula draws on <strong>extensively studied compounds like branched chain amino acids, bacopa monnieri, rhodiola rosea, and panax ginseng</strong> — ingredients that appear regularly in peer-reviewed research on cognitive function, stress adaptation, and mental energy.</p>
-    <p>User experiences vary, as with any supplement. Some report <strong>meaningful improvements in mental clarity, sustained focus, and overall energy</strong> after consistent use, while others note more gradual changes — consistent with how nootropic and adaptogenic supplements typically work over time.</p>
-    <h3>Key points to consider before deciding:</h3>
-    <ul>
-      <li>MINDORA is a supplement, not a prescription medication or substitute for treatment</li>
-      <li>Individual responses to amino acid and adaptogenic ingredients vary based on health status and lifestyle</li>
-      <li>Best results come from consistent daily use over 60-90 days</li>
-      <li>Ordering through the official offer reduces the risk of counterfeit or altered products</li>
-      <li>The money-back guarantee provides a meaningful safety net for new users</li>
-    </ul>
-    <p>Approached as a <strong>daily cognitive-support tool rather than a quick fix</strong>, MINDORA can be evaluated fairly over several months — and the guarantee window makes that trial financially low-risk.</p>
-    <p><strong>The bottom line:</strong> MINDORA is a genuine, thoughtfully formulated supplement designed to support both mental clarity and energy through natural ingredients. It's not a scam — but it rewards consistency and realistic expectations.</p>
-    <p class="italic-note">Always review the full ingredient list, usage terms, and guarantee details on the official MINDORA page before deciding.</p>
-    <div class="cta-center"><a href="https://mwebxara.com/12951/26/2/" class="cta-btn" id="cta-bottom">Check Availability On Official Website</a></div>
+    <p><strong>Disclosure:</strong> This page is an independent product review and may contain affiliate links. If you make a purchase through one of these links, we may earn a commission at no additional cost to you.</p>
+    <p><strong>Disclaimer:</strong> The statements on this page have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary. Always consult with a qualified healthcare provider before starting any new supplement, especially if you are pregnant, nursing, taking medication, or have a known medical condition.</p>
   </div>
-</div>
-
-<div class="label-section">
-  <img src="assets/label.png" alt="MINDORA supplement facts label">
-  <p>Always review the full Supplement Facts panel before use.</p>
 </div>
 
 <footer>
@@ -391,35 +474,51 @@
     <a href="#">Disclaimer</a>
     <a href="#">Contact</a>
   </div>
-  &copy; 2026 MINDORA Research. All Rights Reserved.
+  <div>&copy; 2026 Mindora Research. All Rights Reserved.</div>
 </footer>
-
-<div class="legal-disclaimer">
-  <p>This page is an independent product review and may contain affiliate links. If you make a purchase through one of these links, we may earn a commission at no additional cost to you.</p>
-  <p>The statements made on this page have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary. Always consult a qualified healthcare provider before starting any new supplement, especially if you are pregnant, nursing, taking medication, or have a known medical condition. This is not the official MINDORA website.</p>
-</div>
 
 <script>
 (function(){
-  var redirected = false;
-  var url = "https://mwebxara.com/12951/26/2/";
+  var shown = false;
+  var ctaUrl = "https://mwebxara.com/12951/26/2/";
 
-  function redirectOnce(){
-    if(redirected) return;
-    redirected = true;
-    window.location.href = url;
+  function showExitOffer(){
+    if(shown) return;
+    shown = true;
+    var overlay = document.createElement('div');
+    overlay.style.position='fixed';
+    overlay.style.top='0';overlay.style.left='0';overlay.style.width='100%';overlay.style.height='100%';
+    overlay.style.background='rgba(20,8,40,0.85)';
+    overlay.style.zIndex='99999';
+    overlay.style.display='flex';
+    overlay.style.alignItems='center';
+    overlay.style.justifyContent='center';
+    overlay.style.padding='20px';
+
+    overlay.innerHTML = '\
+      <div style="background:#fff;max-width:480px;width:100%;border-radius:14px;padding:36px 28px;text-align:center;font-family:Segoe UI,Arial,sans-serif;box-shadow:0 20px 50px rgba(0,0,0,.4);">\
+        <div style="font-size:24px;font-weight:800;color:#3a1465;margin-bottom:14px;">Wait! Before You Go...</div>\
+        <div style="font-size:18px;color:#26203a;margin-bottom:22px;line-height:1.6;">Mindora is currently offering a special discount for new customers. Don\'t miss the chance to try it at today\'s price.</div>\
+        <a id="exitCtaBtn" href="'+ctaUrl+'" style="display:inline-block;background:#e8531f;color:#fff;font-weight:800;font-size:19px;padding:16px 32px;border-radius:8px;margin-bottom:14px;text-decoration:none;">Claim My Discount</a>\
+        <div><a id="exitCloseBtn" style="font-size:14px;color:#999;text-decoration:underline;cursor:pointer;">No thanks, I\'ll pay full price later</a></div>\
+      </div>';
+
+    document.body.appendChild(overlay);
+    document.getElementById('exitCloseBtn').addEventListener('click', function(){
+      overlay.remove();
+    });
   }
 
   document.addEventListener('mouseleave', function(e){
     if(e.clientY <= 0){
-      redirectOnce();
+      showExitOffer();
     }
   });
 
   window.addEventListener('beforeunload', function(){
-    try{
-      navigator.sendBeacon && navigator.sendBeacon(url);
-    }catch(err){}
+    if(!shown){
+      shown = true;
+    }
   });
 })();
 </script>
