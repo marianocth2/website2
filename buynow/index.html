@@ -589,24 +589,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 </script>
 <script>
-    var anchorage_id_arr = ["home1","overview1","features1","reviews1","home2","overview2","features2","reviews2","prev-btn","next-btn"];
     var all_a = document.querySelectorAll('a');
     for (var all_a_index = 0; all_a_index < all_a.length; all_a_index++) {
       let currentA = all_a[all_a_index];
-      let aId = currentA.getAttribute('id');
       let aClass = currentA.className;
       if (aClass.indexOf('privacy-link') > -1) {
         currentA.href = currentA.href + "?brand=Coolizi&email=support@helpdeskall.com&address=";
       }else if (aClass.indexOf('articles_links') > -1) {
         currentA.href = click_popup_articles(currentA.href);
-      }else if (aClass.indexOf('image-misalignment-link') > -1) {
-      }else if (!(aId && anchorage_id_arr.indexOf(aId) > -1)) {
-        currentA.href = '#';
-        currentA.addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          Goto();
-        }, false);
       }
     }
   </script>
