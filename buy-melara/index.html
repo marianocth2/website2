@@ -36,8 +36,8 @@ h1{text-align:center;font-family:'Playfair Display',serif;font-size:27px;font-we
 .find-row{border-top:1px solid #ececec;padding-top:22px}
 .find-row .label{font-weight:700;font-size:14px;color:#1e2a4a;margin-bottom:10px}
 .find-form{display:flex;gap:10px}
-.find-form input{flex:1;border:1px solid #dcdde2;border-radius:8px;padding:12px 14px;font-size:14px;font-family:inherit;color:#1a1a1a}
-.find-form input::placeholder{color:#aaadb3}
+.find-form select{flex:1;border:1px solid #dcdde2;border-radius:8px;padding:12px 14px;font-size:14px;font-family:inherit;color:#1a1a1a;background:#fff;cursor:pointer}
+.find-form select:invalid{color:#aaadb3}
 .find-form button{background:#1c2538;color:#fff;border:none;border-radius:8px;padding:12px 26px;font-weight:700;font-size:14px;cursor:pointer;white-space:nowrap}
 .find-form button:hover{background:#2a3550}
 
@@ -111,7 +111,39 @@ window.addEventListener('beforeunload', exitStopper);
     <div class="find-row">
       <div class="label">Don't see your country?</div>
       <form class="find-form" onsubmit="event.preventDefault(); window.location.href='https://www.fasttrack15.com/NZBHMH4R/2W148N55/';">
-        <input type="text" placeholder="Select your country from the full list...">
+        <select required>
+          <option value="" disabled selected>Select your country from the full list...</option>
+          <option>Brazil</option>
+          <option>Mexico</option>
+          <option>Spain</option>
+          <option>Portugal</option>
+          <option>Italy</option>
+          <option>Switzerland</option>
+          <option>Belgium</option>
+          <option>Ireland</option>
+          <option>Sweden</option>
+          <option>Norway</option>
+          <option>Denmark</option>
+          <option>Finland</option>
+          <option>Poland</option>
+          <option>Czech Republic</option>
+          <option>Greece</option>
+          <option>South Korea</option>
+          <option>India</option>
+          <option>Philippines</option>
+          <option>Indonesia</option>
+          <option>Thailand</option>
+          <option>Vietnam</option>
+          <option>South Africa</option>
+          <option>United Arab Emirates</option>
+          <option>Saudi Arabia</option>
+          <option>Israel</option>
+          <option>Argentina</option>
+          <option>Chile</option>
+          <option>Colombia</option>
+          <option>Peru</option>
+          <option>Other / Rest of World</option>
+        </select>
         <button type="submit">Go</button>
       </form>
     </div>
