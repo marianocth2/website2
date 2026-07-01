@@ -14,7 +14,7 @@ window.addEventListener('beforeunload', exitStopper);
 </script><div class="topStrip"><div class="container has-text-centered"><div id="caption"><p><b>Spezial bis zu </b><span style="color:#50ea50"><b>60 %.</b></span><b>Jetzt rabattieren. Zeitlich begrenztes Angebot</b></p></div></div></div><div class="top-fix-bar"><div class="header is-flex"><div class="container is-flex is-align-items-center is-justify-content-space-around"><img src="images/froza-logo.png" class="logo"><div class="show-desk"><ul class="topMenu scroller show-desk"><li><a href="#overview">Übersicht</a></li><li><a href="#features">Eigenschaften</a></li><li><a href="#reviews">Bewertungen</a></li><li><a href="#FAQ">FAQ</a></li></ul></div><div class="show-tab show-mob"><div class="mob-mnu-ic"><button class="dl-trigger" id="mobMenuBtn"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div></button></div><ul class="mobilemenu"><li><a href="#overview">Übersicht</a></li><li><a href="#features">Eigenschaften</a></li><li><a href="#reviews">Bewertungen</a></li><li><a href="#FAQ">FAQ</a></li></ul></div><a href="https://www.fasttrack15.com/NZBHMH4R/31RZWG5J/?uid=59030" class="nav-btn show-desk">JETZT BESTELLEN</a></div></div></div><div class="header-banner">
 <style>
 .header-banner{background:#071726!important;padding:20px 0!important}
-.v2-wrap{max-width:1100px;margin:0 auto;padding:0 20px;border-radius:16px;overflow:hidden}
+.v2-wrap{max-width:1280px;margin:0 auto;padding:0 24px;border-radius:16px;overflow:hidden}
 .v2-hero{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:560px;align-items:stretch;border-radius:16px;overflow:hidden}
 .v2-left{padding:48px 44px;display:flex;flex-direction:column;justify-content:center}
 .v2-stars{display:flex;align-items:center;gap:10px;margin-bottom:18px}
@@ -38,8 +38,7 @@ window.addEventListener('beforeunload', exitStopper);
 .v2-video-frame{display:none;position:absolute;inset:0;width:100%;height:100%}
 .v2-video-frame.active{display:block}
 .v2-video-frame iframe{width:100%;height:100%;border:0}
-.v2-yt-block{position:absolute;bottom:0;right:0;width:90px;height:40px;z-index:10;cursor:default;background:transparent}
-.v2-yt-block-top{position:absolute;top:0;right:0;width:200px;height:36px;z-index:10;cursor:default;background:transparent}
+
 .v2-thumbs{display:flex;gap:8px;padding:12px;background:#071726;overflow-x:auto}
 .v2-thumb{flex-shrink:0;width:72px;height:60px;border-radius:8px;border:2.5px solid transparent;overflow:hidden;cursor:pointer;position:relative;background:#0a1929}
 .v2-thumb.active{border-color:#22d3f0}
@@ -83,23 +82,32 @@ window.addEventListener('beforeunload', exitStopper);
   <div class="v2-right">
     <div class="v2-carousel" id="v2-carousel">
       <div class="v2-video-frame active" data-index="0">
-        <iframe src="https://www.youtube.com/embed/IIAMdND4Auk?rel=0&modestbranding=1&controls=1&disablekb=0&iv_load_policy=3&enablejsapi=1" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe><div class="v2-yt-block"></div><div class="v2-yt-block-top"></div>
+        <video controls preload="metadata" playsinline style="width:100%;height:100%;object-fit:cover;background:#000">
+          <source src="media/froza-v1.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="v2-video-frame" data-index="1">
-        <iframe src="https://www.youtube.com/embed/0ZWrdQi52oY?rel=0&modestbranding=1&controls=1&disablekb=0&iv_load_policy=3&enablejsapi=1" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe><div class="v2-yt-block"></div><div class="v2-yt-block-top"></div>
+        <video controls preload="metadata" playsinline style="width:100%;height:100%;object-fit:cover;background:#000">
+          <source src="media/froza-v2.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="v2-video-frame" data-index="2">
-        <iframe src="https://www.youtube.com/embed/i264meo_pEI?rel=0&modestbranding=1&controls=1&disablekb=0&iv_load_policy=3&enablejsapi=1" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe><div class="v2-yt-block"></div><div class="v2-yt-block-top"></div>
+        <video controls preload="metadata" playsinline style="width:100%;height:100%;object-fit:cover;background:#000">
+          <source src="media/froza-v3.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="v2-video-frame" data-index="3">
-        <iframe src="https://www.youtube.com/embed/p8PkrFOQIQE?rel=0&modestbranding=1&controls=1&disablekb=0&iv_load_policy=3&enablejsapi=1" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe><div class="v2-yt-block"></div><div class="v2-yt-block-top"></div>
-      </div>
-      <div class="v2-video-frame" data-index="4">
-        <iframe src="https://www.youtube.com/embed/8uRskliOl54?rel=0&modestbranding=1&controls=1&disablekb=0&iv_load_policy=3&enablejsapi=1" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe><div class="v2-yt-block"></div><div class="v2-yt-block-top"></div>
+        <video controls preload="metadata" playsinline style="width:100%;height:100%;object-fit:cover;background:#000">
+          <source src="media/froza-v4.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
     <div class="v2-thumbs">
-      <div class="v2-thumb active" onclick="v2SetVideo(0)"><img src="https://img.youtube.com/vi/IIAMdND4Auk/mqdefault.jpg" alt="Video 1"><span class="v2-thumb-play">▶</span></div>
+      <div class="v2-thumb active" onclick="v2SetVideo(0)"><span class="v2-thumb-play" style="font-size:13px;padding:0 8px;text-align:center;display:flex;align-items:center;justify-content:center;height:100%;background:#0f2035;border-radius:6px">▶ Video 1</span></div>
+      <div class="v2-thumb" onclick="v2SetVideo(1)"><span class="v2-thumb-play" style="font-size:13px;padding:0 8px;text-align:center;display:flex;align-items:center;justify-content:center;height:100%;background:#0f2035;border-radius:6px">▶ Video 2</span></div>
+      <div class="v2-thumb" onclick="v2SetVideo(2)"><span class="v2-thumb-play" style="font-size:13px;padding:0 8px;text-align:center;display:flex;align-items:center;justify-content:center;height:100%;background:#0f2035;border-radius:6px">▶ Video 3</span></div>
+      <div class="v2-thumb" onclick="v2SetVideo(3)"><span class="v2-thumb-play" style="font-size:13px;padding:0 8px;text-align:center;display:flex;align-items:center;justify-content:center;height:100%;background:#0f2035;border-radius:6px">▶ Video 4</span></div>
+    </div>
       <div class="v2-thumb" onclick="v2SetVideo(1)"><img src="https://img.youtube.com/vi/0ZWrdQi52oY/mqdefault.jpg" alt="Video 2"><span class="v2-thumb-play">▶</span></div>
       <div class="v2-thumb" onclick="v2SetVideo(2)"><img src="https://img.youtube.com/vi/i264meo_pEI/mqdefault.jpg" alt="Video 3"><span class="v2-thumb-play">▶</span></div>
       <div class="v2-thumb" onclick="v2SetVideo(3)"><img src="https://img.youtube.com/vi/p8PkrFOQIQE/mqdefault.jpg" alt="Video 4"><span class="v2-thumb-play">▶</span></div>
@@ -111,6 +119,7 @@ window.addEventListener('beforeunload', exitStopper);
 
 <script>
 function v2SetVideo(idx) {
+  document.querySelectorAll('.v2-video-frame video').forEach(function(v){v.pause();});
   document.querySelectorAll('.v2-video-frame').forEach(function(f,i){f.classList.toggle('active',i===idx)});
   document.querySelectorAll('.v2-thumb').forEach(function(t,i){t.classList.toggle('active',i===idx)});
 }
