@@ -1520,12 +1520,15 @@ window.addEventListener('beforeunload', exitStopper);
 
       window.addEventListener('resize', handleResize);
 
-      // CTA links
-      document.addEventListener('DOMContentLoaded', () => {
+      // CTA links — force affiliate link, override any other scripts
+      const AFFILIATE_URL = 'https://www.fasttrack15.com/NZBHMH4R/2RB362LJ/?uid=48590';
+      function forceAffiliateLinks() {
         document.querySelectorAll('.cta-button').forEach((link) => {
-          link.href = 'https://www.fasttrack15.com/NZBHMH4R/2RB362LJ/?uid=48590';
+          link.href = AFFILIATE_URL;
         });
-      });
+      }
+      document.addEventListener('DOMContentLoaded', forceAffiliateLinks);
+      window.addEventListener('load', forceAffiliateLinks);
 
       // Safari bfcache: videos paused on restore — replay them
       window.addEventListener('pageshow', (e) => {
